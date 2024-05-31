@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ServiceNow">
+<parameter name="url" value="https://dev197665.service-now.com/"/>
+<parameter name="username" value="admin"/>
+<parameter name="password" value ="UkcB%lM16g*U"/>
+  <test thread-count="5" name="Incident Management" verbose="5">
+    <classes>
+    <class name="week5.testNG_assignment.TC001_CreateIncident"/>
+    <class name="week5.testNG_assignment.TC002_UpdateIncident"/>
+    <class name="week5.testNG_assignment.TC003_ResolveIncident"/>
+      <class name="week5.testNG_assignment.TC004_DeleteIncident"/>
+    
+    </classes>
+  </test> <!-- Incident Management -->
+</suite> <!-- ServiceNow -->
