@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Salesforce">
+<parameter name="url" value="https://login.salesforce.com/"/>
+<parameter name="username" value="gokul.sekar@testleaf.com"/>
+<parameter name="password" value="Leaf$123"/>
+
+  <test thread-count="5" name="Opportunity">
+    <classes>
+      <class name="Marathon3.TC001_CreateOpportunity"/>
+      <class name="Marathon3.TC002_EditOpportunity"/>
+      <class name="Marathon3.TC003_DeleteOpportunity"/>
+    </classes>
+  </test> <!-- Opportunity -->
+</suite> <!-- Salesforce -->
